@@ -1,4 +1,6 @@
 # app_linuxkernel.py
+from pathlib import Path
+
 import streamlit as st
 import torch
 import torch.nn.functional as F
@@ -12,7 +14,7 @@ import torch.nn as nn
 # -------------------------------
 # CONFIGURE PATHS
 # -------------------------------
-BASE_DIR = r".\Dataset_2_LinuxKernel\models"
+BASE_DIR = Path(__file__).resolve().parent / "Dataset_2_LinuxKernel" / "models"
 
 # Model name mapping
 MODEL_OPTIONS = {

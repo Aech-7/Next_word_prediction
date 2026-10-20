@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 # Define base directory
-BASE_DIR = Path(r".\Dataset_1_SherlockHolmes")
+BASE_DIR = Path(__file__).resolve().parent / "Dataset_1_SherlockHolmes"
 
 # Define MLP Model Architecture (3 hidden layers)
 class MLP(nn.Module):
